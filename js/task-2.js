@@ -13,8 +13,8 @@ class Storage {
   }
   removeItem(itemToRemove) {
     for (const element of this.#items) {
-      if (element == itemToRemove) {
-        this.#items.splice(element, 1);
+      if (element === itemToRemove) {
+        this.#items.splice(this.#items.indexOf(element), 1);
       }
     }
   }
